@@ -1,16 +1,40 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Loader from 'react-loaders'
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const refForm = useRef()
 
   useEffect(() => {
-      setTimeout(() => {
-        setLetterClass('text-animate-hover')
-      }, 3000)
+    setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 3000)
   }, [])
+
+  const sendEmail = e => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_5o4b0vg',
+        'template_y1i87re',
+        refForm.current,
+        'irTacGi202PrUBWkV'
+      )
+      .then(
+        () => {
+          alert('Message succesfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send message, please try again')
+        }
+      )
+  }
 
   return (
     <>
@@ -29,7 +53,7 @@ const Contact = () => {
             feel free to use the form below, thank you!
           </p>
           <div className="contact-form">
-            <form>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />
@@ -52,17 +76,35 @@ const Contact = () => {
                 </li>
                 <li>
                   <textarea
-                    className="Message"
+                    placeholder="Message"
                     name="message"
                     required
                   ></textarea>
                 </li>
                 <li>
-                    <input type='submit' className='flat-button' value='Send' />
+                  <input type="submit" className="flat-button" value="Send" />
                 </li>
               </ul>
             </form>
           </div>
+        </div>
+        <div className="info">
+          Patrick O'Connor,
+          <br />
+          United States,
+          <br />
+          7 Yale Drive <br />
+          Succasunna NJ
+          <br />
+          <span>oconnor-patrick@outlook.com</span>
+        </div>
+        <div className="map-wrap">
+          {/* <MapContainer center={[40.8693, 74.6635]} zoom={13}>
+            <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
+            <Marker position={[40.8693, 74.6635]}>
+                <Popup>Always available for a coffee or two!</Popup>
+            </Marker>
+          </MapContainer> */}
         </div>
       </div>
       <Loader type="ball-pulse" />

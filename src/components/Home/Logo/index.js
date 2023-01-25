@@ -1,5 +1,5 @@
 import './index.scss'
-import plogo from '../../../assets/images/plogo.png'
+// import plogo from '../../../assets/images/plogo.png'
 // import { useRef } from 'react'
 
 const Logo = () => {
@@ -9,7 +9,7 @@ const Logo = () => {
 
   return (
     <div className="logo-container">
-      <img className="solid-logo" src={plogo} alt="P" />
+      {/* <img className="solid-logo" src={plogo} alt="P" /> */}
       <svg
         width="559pt"
         height="897pt"
