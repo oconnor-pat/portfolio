@@ -3,7 +3,7 @@ import './index.scss'
 import plogo from '../../assets/images/plogo.png'
 import patrickoconnor from '../../assets/images/patrickoconnor.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faSuitcase, faUser } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
   faLinkedin,
@@ -35,6 +35,14 @@ const Sidebar = () => (
         to="/contact"
       >
         <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+      </NavLink>
+      <NavLink
+        exact="true"
+        activeclassname="active"
+        className="portfolio-link"
+        to="/portfolio"
+      >
+        <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
       </NavLink>
     </nav>
     <ul>
