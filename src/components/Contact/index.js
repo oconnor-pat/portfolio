@@ -99,14 +99,6 @@ const Contact = () => {
           <br />
           <span>oconnor-patrick@outlook.com</span>
         </div>
-        <div className="map-wrap">
-          {/* <MapContainer center={[40.8693, 74.6635]} zoom={13}>
-            <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
-            <Marker position={[40.8693, 74.6635]}>
-                <Popup>Always available for a coffee or two!</Popup>
-            </Marker>
-          </MapContainer> */}
-        </div>
       </div>
       <Loader type="ball-pulse" />
     </>

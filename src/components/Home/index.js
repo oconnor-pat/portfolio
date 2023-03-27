@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import plogo from '../../assets/images/plogo.png'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import Logo from './Logo'
+import Logo from './Profilepic'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
