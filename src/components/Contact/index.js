@@ -48,7 +48,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I'm currently seeking any junior development oppurtunites. Either
+            I'm currently seeking any junior development opportunites. Either
             remote, or in the NYC Metro Area. If there is any reason you need to
             contact me about such oppurtunites, please feel free to use the form
             below, thank you!
