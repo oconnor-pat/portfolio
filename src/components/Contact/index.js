@@ -15,7 +15,7 @@ const Contact = () => {
     }, 3000)
   }, [])
 
-  const sendEmail = e => {
+  const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
@@ -91,13 +91,13 @@ const Contact = () => {
                 </li>
                 <li>
                   <input type="submit" className="flat-button" value="Send" />
+                  <button className="resume-button" onClick={downloadResume}>
+                    Download Resume
+                  </button>
                 </li>
               </ul>
             </form>
           </div>
-          <button className="resume-button" onClick={downloadResume}>
-            Download Resume
-          </button>
         </div>
         <div className="info">
           Patrick O'Connor,
