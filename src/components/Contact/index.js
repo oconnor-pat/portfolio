@@ -36,6 +36,13 @@ const Contact = () => {
       )
   }
 
+  const downloadResume = () => {
+    const link = document.createElement('a')
+    link.href = '../../PatrickOConnorResume.pdf'
+    link.download = 'PatrickOConnorResume.pdf'
+    link.click()
+  }
+
   return (
     <>
       <div className="container contact-page">
@@ -88,6 +95,9 @@ const Contact = () => {
               </ul>
             </form>
           </div>
+          <button className="resume-button" onClick={downloadResume}>
+            Download Resume
+          </button>
         </div>
         <div className="info">
           Patrick O'Connor,
