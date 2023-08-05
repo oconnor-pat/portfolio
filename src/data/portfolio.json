@@ -1,0 +1,22 @@
+{
+  "portfolio": [
+    {
+      "cover": "/portfolio/Pats-Jams/patsjams.png",
+      "title": "PatsJams",
+      "description": "PatsJams is music playlist creating app, built using HTML, CSS, JavaScript, and the Spotify API. Users can search for songs and add them to a playlist. The playlist can then be saved to the user's Spotify account.",
+      "url": "https://pats-jams.netlify.app/"
+    },
+    {
+        "cover": "/portfolio/WeatherChecker/weatherchecker.png",
+        "title": "WeatherChecker",
+        "description": "WeatherChecker is a weather app built using HTML, CSS, JavaScript, and the OpenWeather API. Users can search for a city and get the current weather and a 5-day forecast. The app also uses local storage to save the user's search history.",
+        "url": "https://pats-open-weather.netlify.app/"
+      },
+      {
+        "cover": "/portfolio/TDTE/TDTE.png",
+        "title": "The Dave Trivia Experience",
+        "description": "The Dave Trivia Experience is a trivia game built using HTML, CSS, TypeScript, React and the Open Trivia Database API. Users can play a game of trivia and see their score at the end.",
+        "url": "https://tdte.netlify.app/"
+      }
+  ]
+}
