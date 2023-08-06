@@ -2,6 +2,10 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  background-image: url('../../assets/images/rainer.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .top-tags {
@@ -10,13 +14,16 @@
 }
 
 .tags {
-  color: #287352;
-  opacity: 0.6;
+  color: #fff;
   position: absolute;
   bottom: 0;
   left: 120px;
   font-size: 30px;
   font-family: 'La Belle Aurore';
+}
+
+.top-tag-html {
+  margin-left: -20px;
 }
 
 .bottom-tag-html {
@@ -43,7 +50,7 @@
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
-    color: #287352;
+    color: #fff;
     font-weight: 400;
     margin-top: 0;
     position: relative;
@@ -57,7 +64,6 @@
       position: absolute;
       margin-top: -10px;
       left: -10px;
-      opacity: 0.6;
       line-height: 18px;
     }
 
@@ -70,13 +76,12 @@
       left: -30px;
       bottom: -20px;
       margin-left: 20px;
-      opacity: 0.6;
     }
   }
 
   p {
     font-style: 13px;
-    color: #333;
+    color: #fff;
     font-family: 'Sans-serif';
     font-weight: 800;
     min-width: fit-content;
